@@ -7,7 +7,7 @@ export function Layout({ children, address, setAddress }: {
     if (!eth) { alert('Install MetaMask'); return; }
     try {
       await eth.request({ method: 'wallet_addEthereumChain', params: [{
-        chainId: '0xF1EF', chainName: 'GenLayer Studio',
+        chainId: '0xF22F', chainName: 'GenLayer Studio',
         nativeCurrency: { name: 'GEN', symbol: 'GEN', decimals: 18 },
         rpcUrls: ['https://studio.genlayer.com/api'],
         blockExplorerUrls: ['https://explorer-studio.genlayer.com'],
